@@ -1,5 +1,9 @@
 # Datadog changelog
 
+## 2.15.2
+
+* Bind mount host /etc/os-release in system probe container
+
 ## 2.15.1
 * Add parameter `clusterAgent.rbac.serviceAccountAnnotations` for specifying annotations for dedicated ServiceAccount for Cluster Agent.
 * Add parameter `agents.rbac.serviceAccountAnnotations` for specifying annotations for dedicated ServiceAccount for Agents.
