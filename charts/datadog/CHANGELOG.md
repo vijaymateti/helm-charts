@@ -1,5 +1,9 @@
 # Datadog changelog
 
+## 2.20.0
+
+* Enable APM by default with using a Unix Domain socket for communication.
+
 ## 2.19.9
 
 * Print a configuration notice to clarify the containers filtering behavior when a misconfiguration is detected.
