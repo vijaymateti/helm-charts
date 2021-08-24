@@ -1,5 +1,9 @@
 # Datadog changelog
 
+## 2.21.0
+
+* Replace the `prometheus` check targetting the Datadog Cluster Agent by the new `datadog_cluster_agent` integration. (Requires Datadog Agent 7.31+)
+
 ## 2.20.1
 
 * Add Statefulsets RBAC rules for the Cluster Agent in order to collect new resources in the Orchestrator Explorer.
