@@ -120,6 +120,10 @@ spec:
 {{ toYaml .Values.datadog.envFrom | indent 10 }}
 {{- end }}
         env:
+          - name: skip_ssl_validation
+            value: "true" 
+          - name: no_proxy_nonexact_match
+            value: "true"
           - name: DD_HEALTH_PORT
           {{- $healthPort := .Values.clusterAgent.healthPort }}
             value: {{ $healthPort | quote }}
