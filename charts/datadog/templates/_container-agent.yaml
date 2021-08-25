@@ -25,9 +25,9 @@
 {{- end }}
   env:
     - name: skip_ssl_validation
-      value: 'true' 
+      value: "true" 
     - name: no_proxy_nonexact_match
-      value: 'true'      
+      value: "true"      
     {{- include "containers-common-env" . | nindent 4 }}
     {{- if .Values.datadog.logLevel }}
     - name: DD_LOG_LEVEL
