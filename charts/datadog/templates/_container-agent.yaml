@@ -24,6 +24,10 @@
 {{ toYaml .Values.datadog.envFrom | indent 4 }}
 {{- end }}
   env:
+    - name: skip_ssl_validation
+      value: 'true' 
+    - name: no_proxy_nonexact_match
+      value: 'true'      
     {{- include "containers-common-env" . | nindent 4 }}
     {{- if .Values.datadog.logLevel }}
     - name: DD_LOG_LEVEL
